@@ -20,6 +20,9 @@ Subject		- An integer vector each representing the respective 30 volunteers who 
 *Columns 3 to 81*
 
 These are numeric vectors containing the Average mean or standard deviation for measurements as depicted by each of the column names in respect of each activity and volunteer.
+The original values from the experiment for these mean and standard deviations were used to calculate the average using the run_analysis.R script. 
+Consequently the values of these variables in the tidy dataset are really averages of the original dataset calculated per activity per volunteer.
+
 
 		ColNumber |	Name	|			Description
 		----------|:--------------:|-----------------------------------:
