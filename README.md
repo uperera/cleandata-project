@@ -1,9 +1,15 @@
 
 #README file for **run_analysis.R** script
 
+This script is  part of the course project for "getting and Cleaning Data"
+
 This script computes and produces a Tidy Dataset of Averages for means and standard deviations of measurements obtained in an Experiment for the Samusung Galaxy S II smartphone.
 The measurements were collected from 30 volunteers within an age bracket of 19-48 years. 
 Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.
+
+Details of the Experiment can be obtained from the following url
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ##Input Data
 The script reads the following INPUT DATA files obtained from the Experiment.
@@ -56,6 +62,11 @@ From a semantics point of view too, this format lends itself to easily selecting
 However, if needed, it can be easily converted to the narrow format by simply applying a two step process in one line as follows:
 
 tidy_data1 <- result %>% gather(measurement, average, -(activity:subject)) %>% spread(activity,average)
+
+
+URL Link to Hadly Wickham's paper on Tiday Data is:
+
+http://vita.had.co.nz/papers/tidy-data.pdf
 
 
 
